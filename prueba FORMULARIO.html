@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 08: formularios</title>
+</head>
+<body>
+    <h1>Ejemplo inicial formulario</h1>
+    
+    <form action="" method="get" enctype="multipart/form-data"><!-- Metodo get se manda formulario por URL y post por fichero HTML -->
+        
+        <p>
+            <label>Introduce su queja<br>
+                <input type="text" name="Queja" size="60" minlength="20" maxlength="60">
+            </label>
+        </p>
+
+        <!--NO SON IMPUTS-->
+        <p>
+            <label>Introduce su queja (textarea)<br>
+                <textarea name="Queja" cols="50" rows="20" minlength="20"></textarea>
+            </label>
+        </p>
+
+        <p>
+            <label for="Provincia">Seleccione la Provincia<br>
+                <select name="" id="Provincia">
+                    <option value="Ninguna" disabled selected>Ninguna</option>
+                    <option value="CA">Cádiz</option>
+                    <option value="SE">Sévilla</option>
+                    <option value="HU">Huelva</option>
+                    <option value="GR">Granada</option>
+                </select>
+            </label>
+        </p>
+        <!------------------------------------------------------------------------------>
+        <p>
+            <label>Factura de Compra<br>
+                <input type="file" name="Archivo">
+            </label>
+        </p>
+        <p>
+            <label for="usuario">Nombre de usuario</label> <br>
+            <input type="text" name="Usuario" id="usuario">
+        </p>
+        <p>
+            <label for="clave">Introduzca la clave</label><br><!-- Forma 1 de hacer el formulario -->
+            <input type="password" name="Clave" id="clave">
+        </p>
+        <p>
+            <label>Fecha compra <br><!-- Forma 2 de hacer el formulario -->
+                <input type="date" name="Fecha" required>
+            </label>
+        </p>
+        <p>
+            <label>Correo electronico<br>
+                <input type="email" name="CorreoElectronico" placeholder="Introduce su Correo">
+            </label>
+        </p>
+        <p>Seleccione sus preferencias
+            <label><input type="checkbox" name="Preferencias" value="C" checked>Cine</label>
+            <label><input type="checkbox" name="Preferencias" value="T">Teatro</label>
+            <label><input type="checkbox" name="Preferencias" value="V">Viajes</label>
+        </p>
+        <p>Seleccione su módulo preferido<br>
+            <label><input type="radio" name="modulo" value="LMSGI">Lenguaje de marcas</label>
+            <label><input type="radio" name="modulo" value="SI">Sistemas Informáticos</label>
+            <label><input type="radio" name="modulo" value="BD">Bases de datos</label>
+        </p>
+        <p>
+            <label>Seleccione un Color<br><input type="color" name="Color"></label>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+
+
+    </form>
+</body>
+</html>
