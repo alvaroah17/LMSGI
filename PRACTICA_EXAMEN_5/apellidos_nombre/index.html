@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+</head>
+<body>
+  <h2>Zona de navegación de nuesta web.</h2>
+    <nav>
+      <ol>
+        <li><a href="../apellidos_nombre/index.html">Página inicial</a></li>
+        <li><a href="../apellidos_nombre/info/tecnologia/blog.html">Nuestro blog</a></li>
+        <li><a href="../apellidos_nombre/sat/resultados.html">Resultados</a></li>
+        <li><a href="https://angoies.github.io/zonaWeb/">Ayuda HTML</a></li>
+      </ol>
+    </nav>
+  
+<h1>Encuesta alumnado</h1>
+
+<form action="../apellidos_nombre/sat/resultados.html" method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Datos iniciales</legend>
+      <p>Seleccione a continuación cuales son los temas de su interés:</p>
+      <p>  
+        <label><input type="checkbox" name="Lenguajes" value="HTML">HTML</label><br>
+        
+        <label><input type="checkbox" name="Lenguajes" value="CSS">Estilos CSS</label><br>
+
+        <label><input type="checkbox" name="Lenguajes" value="JaVAsCRIPT">EL lenguaje JaVAsCRIPT</label>
+      </p>  
+      <p>
+        <label>indique la fecha de incorporación al curso (que debe ser posterior al 15 de septiembre de 2019)<br>
+          <input type="date" name="Fecha" min="2019-09-15">
+        </label>
+      </p>
+  
+      <p>
+        <label>Adjunta dos fotos, una tipo DNI y otra de cuerpo entero<br>
+          <input type="file" name="fotoDNI">
+        </label>
+      </p>
+  
+      <p>
+        <label>Vamos a pintar la clase: selecione el color preferido (por defeto rojo)
+          <input type="color" name="colorPreferido" value="#FF0000">
+        </label>
+      </p>
+      <p>
+        <label>Indique si dispone de ella, su página web:<br>
+          <input type="url" name="Url">
+        </label>
+      </p>
+      
+      <p>
+        <label>Indique su código de alumno:
+          <input type="text" name="CodAlumno" placeholder="ver patron...">
+        </label>Formato: tres mayusculas seguidas de 1 o 2 dígitos.
+      </p>
+  
+  
+      <p>Seleccione zona donde víve<br>
+        <label><input type="radio" name="Residencia" value="Jerez">Jerez (* Valor por defecto)</label><br>
+        <label><input type="radio" name="Residencia" value="Pedanias">Pedanías: Cuartillos, Estella, etc..</label><br>
+        <label><input type="radio" name="Residencia" value="Afueras" checked>Fuera de Jerez: El Puerto, Chipiona, etc..</label>
+      </p>
+    
+      <p>
+        <label><input type="checkbox" name="Condiciones" value="AceptaCondiciones" required>Acepto recibir noticaciones del estado de la encuesta (campo obligatorio)</label>
+      </p>
+  </fieldset>
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Limpiar">
+</form>    
+      
+</body>
+</html>
