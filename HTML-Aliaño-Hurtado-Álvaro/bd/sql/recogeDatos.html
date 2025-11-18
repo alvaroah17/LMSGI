@@ -19,9 +19,36 @@
             <fieldset>
                 <legend>Datos Compra</legend>
                 <p>
+                    Seleccione la marca<br>
+                        <label><input type="radio" name="marca" value="a">Marca a</label>
+                        <label><input type="radio" name="marca" value="b"></label>
+                        <label><input type="radio" name="marca" value="c"></label>
+                        <label><input type="radio" name="marca" value="d"></label>
+                    
+                </p>
+                
+                <p>
                     <label>Numero de Unidades<br>
                         <input type="number" name="unidades" value="1" max="1000" min="1" step="2">
                     </label>
+                </p>
+
+                <p>
+                    <label>DNI y Factura
+                        <input type="file" name="ficheros" multiple>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Fecha Compra <br>
+                        <input type="date" name="fechaCompra">
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p>
+                    
                 </p>
             </fieldset>
             <input type="submit" value="Enviar">
