@@ -28,7 +28,8 @@
         <label><input type="checkbox" name="Lenguajes" value="CSS">Estilos CSS</label><br>
 
         <label><input type="checkbox" name="Lenguajes" value="JaVAsCRIPT">EL lenguaje JaVAsCRIPT</label>
-      </p>  
+      </p>
+
       <p>
         <label>indique la fecha de incorporación al curso (que debe ser posterior al 15 de septiembre de 2019)<br>
           <input type="date" name="Fecha" min="2019-09-15">
@@ -37,7 +38,7 @@
   
       <p>
         <label>Adjunta dos fotos, una tipo DNI y otra de cuerpo entero<br>
-          <input type="file" name="fotoDNI">
+          <input type="file" name="fotoDNI" multiple>
         </label>
       </p>
   
@@ -46,6 +47,7 @@
           <input type="color" name="colorPreferido" value="#FF0000">
         </label>
       </p>
+      
       <p>
         <label>Indique si dispone de ella, su página web:<br>
           <input type="url" name="Url">
@@ -60,9 +62,9 @@
   
   
       <p>Seleccione zona donde víve<br>
-        <label><input type="radio" name="Residencia" value="Jerez">Jerez (* Valor por defecto)</label><br>
+        <label><input type="radio" name="Residencia" value="Jerez" checked>Jerez (* Valor por defecto)</label><br>
         <label><input type="radio" name="Residencia" value="Pedanias">Pedanías: Cuartillos, Estella, etc..</label><br>
-        <label><input type="radio" name="Residencia" value="Afueras" checked>Fuera de Jerez: El Puerto, Chipiona, etc..</label>
+        <label><input type="radio" name="Residencia" value="Afueras">Fuera de Jerez: El Puerto, Chipiona, etc..</label>
       </p>
     
       <p>
