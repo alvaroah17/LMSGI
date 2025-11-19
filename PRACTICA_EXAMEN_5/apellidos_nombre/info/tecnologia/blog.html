@@ -17,7 +17,7 @@
         </ol>
   </nav>
 
-  <h1>Blog sobre tecnología y viajes</h1>
+  <h1 id="inicio">Blog sobre tecnología y viajes</h1>
     <p>
       Hola, Soy Jorge Alberto González Barillas. Este blog personal versará sobre dos grandes temas, no relacionados
       entre ellos: HTML y viajes. Relleno: Lorem, ipsum dolor sit amet consectetur
@@ -33,28 +33,29 @@
         <ul>
           <li>Artículos sobre HTML
             <ol>
-              <li>Estructura</li>
-              <li>Comentarios</li>
-              <li>Accesibilidad</li>
+              <li><a href="#Estructura">Estructura</a></li>
+              <li><a href="#Comentarios">Comentarios</a></li>
+              <li><a href="#Accesibilidad">Accesibilidad</a></li>
             </ol>
           </li>  
           <li>Artículos sobre Viajes
             <ol>
-              <li>Barbate</li>
-              <li>Benaocaz</li>
-                <ol>
-                  <li>Salto del cabrero</li>
+              <li><a href="#Barbate">Barbate</a></li>
+              <li><a href="#Benaocaz">Benaocaz</a>
                 </ol>
+                  <li><a href="#Salto del cabrero">Salto del cabrero</a></li>
+                </ol>
+              </li>
             </ol>
           </li>  
         </ul>
       </nav>
 
-    <article>
+    <section>
       <h2>Artículos sobre HTML</h2>
         <p>Selección de artículos sobre HTML.</p>
       
-      <h3>Estructura documento</h3>
+        <h3 id="Estructura">Estructura documento</h3>
       
         <p>
           Volviendo al código HTML del primer ejemplo, es importante conocer las tres etiquetas principales de un
@@ -76,13 +77,13 @@
       <p>Y dentro del body:</p>
       
       <pre>
-        <code>&lth1>Ejemplo de título</h1></code>
-        <code>&ltp>ejemplo de párrafo</code></p>
+        <code>
+          &lt;h1>Ejemplo de título&lt;/h1>
+          &lt;p>ejemplo de párrafo&lt;/p>
+        </code>
       </pre>
-      
-      
-      
-      <H3>Sobre los comentarios</H3>
+
+      <H3 id="Comentarios">Sobre los comentarios</H3>
       
           <p>
             Aunque los comentarios no se muestran por pantalla y por tanto son
@@ -94,15 +95,12 @@
           <p>La sintaxis de los comentarios es la siguiente:</p>
           
             <ul>
-              <li>Apertura del comentario: &lt!-- </li>
+              <li>Apertura del comentario: <code>&lt;!-- </code></li>
               <li> Contenido del comentario: (cualquier texto)</li>
-              <li>Cierre del comentario: --></li>
+              <li>Cierre del comentario: <code>--></code></li>
             </ul>
-      
-      
-      
-      
-      <h3>Sobre la accesibilidad</h3>
+
+      <h3 id="Accesibilidad">Sobre la accesibilidad</h3>
       
           <p>
             El principal objetivo de la accesibilidad web es el de permitir a
@@ -135,46 +133,49 @@
                 Generalmente, los sitios accesibles son más fáciles de utilizar también para los usuarios sin discapacidades.
               </li>
             </ul>
-    </article>
+    </section>
         
-      
-    
-  
-
-
-  
-    <article>
-      <h2>Artículos sobre viajes</h2>
-        <h3>Barbate</h3>
-      
-        Barbate (de 1950 a 1998 fue llamado Barbate de Franco) es un municipio español de la provincia de Cádiz
-        (Andalucía). En 2018 contaba con 22 551 habitantes.1​ Su extensión superficial es de 143,4 km²  y tiene una
-        densidad de 159,42 hab/km². Tiene una altitud media de 10 metros y se encuentra a 64 kilómetros de la capital de
-        provincia, Cádiz.2​ Pertenece a la comarca de La Janda y, a su vez, a la subcomarca de la Janda Litoral.3
-      
-        Se ubica en la desembocadura del río Barbate, en la costa próxima al cabo de Trafalgar, frente al que se
-        desarrolló la batalla del mismo nombre. Tradicionalmente ha sido una población pesquera, dedicándose tanto a la
-        pesca en los caladeros marroquíes como a la pesca del atún mediante el arte tradicional de la almadraba.​
-      
-      
-        <h3>Benaocaz</h3>
-        Benaocaz es un municipio español de la provincia de Cádiz, Andalucía. Se encuentra al noreste de la provincia
-          de Cádiz, en la zona más occidental de la Cordillera Bética, concretamente en la Sierra del Endrinal, al sur del
-          río Tavizna, encontrándose su término municipal dentro del Parque Natural Sierra de Grazalema, a excepción de la
-          zona más occidental que se encuentra en el Parque Natural de Los Alcornocales. Forma parte de la Ruta de los
-          Pueblos Blancos: su término municipal limita al norte con Grazalema; al sur con Ubrique; al Este con Villaluenga
-          del Rosario; y al Oeste con el de El Bosque.
-        <h3>Salto del Cabrero</h3>
-        El Salto del Cabrero es una formación geológica singular localizada en el Parque natural de la Sierra de
-          Grazalema, cercano a la localidad de Benaocaz. Una falla separa dos cumbres de un mismo desfiladero, realizadas
-          de manera natural en la rocas de composición caliza.
-      
-      
-      
-          Existe una leyenda o cuento que parece ser el origen del nombre del lugar. Un pastor de cabras, huyendo de un
-          prestamista para atender a su hijo enfermo, cruzó la falla de un salto.
-    </article> 
     <section>
+      <article>
+        <h2>Artículos sobre viajes</h2>
+          <h3 id="Barbate">Barbate</h3>
+        
+          <p>
+            Barbate (de 1950 a 1998 fue llamado Barbate de Franco) es un municipio español de la provincia de Cádiz
+            (Andalucía). En 2018 contaba con 22 551 habitantes.1​ Su extensión superficial es de 143,4 km²  y tiene una
+            densidad de 159,42 hab/km². Tiene una altitud media de 10 metros y se encuentra a 64 kilómetros de la capital de
+            provincia, Cádiz.2​ Pertenece a la comarca de La Janda y, a su vez, a la subcomarca de la Janda Litoral.3
+          </p>
+          <img src="../../figuras/Barba-5.png" alt="Barbate almadraba" width="250" height="404" >
+          <p>
+            Se ubica en la desembocadura del río Barbate, en la costa próxima al cabo de Trafalgar, frente al que se
+            desarrolló la batalla del mismo nombre. Tradicionalmente ha sido una población pesquera, dedicándose tanto a la
+            pesca en los caladeros marroquíes como a la pesca del atún mediante el arte tradicional de la almadraba.
+          </p>​
+        
+          <h3 id="Benaocaz">Benaocaz</h3>
+            <p>
+              Benaocaz es un municipio español de la provincia de Cádiz, Andalucía. Se encuentra al noreste de la provincia
+              de Cádiz, en la zona más occidental de la Cordillera Bética, concretamente en la Sierra del Endrinal, al sur del
+              río Tavizna, encontrándose su término municipal dentro del Parque Natural Sierra de Grazalema, a excepción de la
+              zona más occidental que se encuentra en el Parque Natural de Los Alcornocales. Forma parte de la Ruta de los
+              Pueblos Blancos: su término municipal limita al norte con Grazalema; al sur con Ubrique; al Este con Villaluenga
+              del Rosario; y al Oeste con el de El Bosque.
+            </p>
+            <h4 id="Salto del cabrero">Salto del Cabrero</h4>
+              <p>
+                El Salto del Cabrero es una formación geológica singular localizada en el Parque natural de la Sierra de
+                Grazalema, cercano a la localidad de Benaocaz. Una falla separa dos cumbres de un mismo desfiladero, realizadas
+                de manera natural en la rocas de composición caliza.
+              </p>
+
+              <p>
+                Existe una leyenda o cuento que parece ser el origen del nombre del lugar. Un pastor de cabras, huyendo de un
+                prestamista para atender a su hijo enfermo, cruzó la falla de un salto.
+              </p>
+      </article>
+    </section> 
+    <footer>
       <h2>Sobre nosotros</h2>
         <h3>Contacto</h3>
       
@@ -183,18 +184,26 @@
             <dd>barillas@local.com</dd>
           <dt>url</dt>
             <dd>barillas.com</dd>
-          redes sociales
-        </dl>
-      
-      
+          <dt>redes sociales</dt>
+            <dd>
+              <img src="../../figuras/facebook_button_blue.png" alt="Logo facebook" width="32" height="32" >
+              <img src="../../figuras/Twitter.png" alt="Logo Twitter" width="32" height="32" >
+            </dd>
+          </dl>
+        
         <h3>Política de privacidad</h3>
       
-        Conforme a lo previsto en el artículo 5 de la LOPD, se informa al
-        USUARIO que, mediante los formularios de registro de la web, se recaban datos, que se almacenan en un fichero, con
-        la exclusiva finalidad de envío de comunicaciones electrónicas, tales como: boletines (newsletters), nuevas
-        entradas (posts), así como otras comunicaciones que elabogadodigital.com entiende interesantes para sus USUARIOS.
-        Los campos marcados como de cumplimentación obligatoria, son imprescindibles para realizar la finalidad expresada.
+        <p>
+          Conforme a lo previsto en el artículo 5 de la LOPD, se informa al
+          USUARIO que, mediante los formularios de registro de la web, se recaban datos, que se almacenan en un fichero, con
+          la exclusiva finalidad de envío de comunicaciones electrónicas, tales como: boletines (newsletters), nuevas
+          entradas (posts), así como otras comunicaciones que elabogadodigital.com entiende interesantes para sus USUARIOS.
+          Los campos marcados como de cumplimentación obligatoria, son imprescindibles para realizar la finalidad expresada.
+        </p>
+        <a href="#inicio ">
+          <img src="../../figuras/arriba.png" alt="flecha para llevar al inicio de la pagina" width="64" height="64" >
+        </a>
       
-    </section>
+    </footer>
 </body>
 </html>
