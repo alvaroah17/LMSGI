@@ -1,0 +1,28 @@
+/*Álvaro Aliaño*/
+/*Llaves se utilizan para dar estilos({}) y corchetes para los selectores ([])*/
+h1:first-letter{color:red;} /*Primera letra*/ 
+p:first-line{color:rgb(110, 45, 231);} /*Primera línea*/ 
+h1:first-child{color:rgb(27, 212, 27);} /*Primer hijo*/
+h2#importante:before {content:"Tema: ";color: green}
+h2:after {content: "(esto es el título del tema)";color: purple;}
+body:before {content: "      G       ";background: #DBA902;border: 1px solid green}
+body:after {content:"FIN";color: red;background: yellow;border: 1px solid red}
+a:hover{color: red;background: yellow}  /*Ratón encima del enlace*/ 
+a:active{color:white;background: purple;}  /*Enlaces en los que se está haciendo click*/ 
+a:focus{color: white;background: green;}  /*Enlaces que están siendo seleccionados mediante teclado*/ 
+a:link{color: salmon;background: greenyellow;}  /*Vínculos que todavía no han sido visitados*/
+a:visited{color: white;background: red;}  /*Vínculos ya visitados*/
+p>em {color:white;background: black} /*Selector Ascendiente / Descendiente*/
+body>p {border:1px solid black} /*Selector Padre/Hijo*/
+p.primero>em{color:rgb(207, 20, 161)} /*Combinación de varios selectores*/
+p + pre {color:#00FF00}/*Selector de Hermanos adyacentes*/
+h1~pre{color:#640092;}/*Selector de Hermanos en General*/
+table,tr,td {border:1px solid black}
+td[colspan] {color:#007777;}/*Selector de atributo*/
+td[colspan="3"] {color:#007777;background-color: pink;}/*Selector de atributo con valor concreto (Hasta el siguiente comentario son este tipo de selector*/
+a[href="https://marca.com"] {color:#007777;background-color: pink;}
+/*h3[class="prueba"] {color:orangered;background-color: orange;}*/
+h3[id="prueba"] {color:green;background-color: greenyellow;}
+h3[class~="prueba"] {color:orangered;background-color: orange;}/*Selector de atributo con valor por paroximación*/
+/**[lang|=es] {color:green;background-color: greenyellow;}/*Selector de atributo indicando el comienzo del valor*/
+ul li.datos[id] {color:#00FF00}/*Combinación de selectores*/

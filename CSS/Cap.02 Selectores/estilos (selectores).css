@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    color: blue;
+}
+
+.Novedad {
+    background-color: aqua;
+}
+
+.Novedad.revisar {
+    background-color: aquamarine;
+}
+
+
+section p {
+    color: green;
+}
+
+section aside p {
+    color: brown;
+}
+
+h1,
+h2,
+h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
