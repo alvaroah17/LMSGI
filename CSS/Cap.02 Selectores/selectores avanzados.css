@@ -1,0 +1,29 @@
+/*Avanzados.css*/
+
+/*ATRIBUTOS*/
+[title] {
+    color: red;
+}
+
+/*Adyacente*/
+h1+p,
+h2+p {
+    background-color: lime;
+}
+
+
+/*SELECTOR PADRE HIJO*/
+article>p {
+    color: red;
+    text-align: center;
+}
+
+
+article p {
+    color: blue;
+    font-style: italic;
+}
+
+h3 ~ h4 {
+    background-color: salmon;
+}
